@@ -3,9 +3,11 @@ async function main() {
   
     console.log("Deploying contracts with the account:", deployer.address);
   
-    const token = await ethers.deployContract("Token");
+    // const token = await ethers.deployContract("Token");
+    const crowdFunding = await ethers.deployContract("CrowdFunding");
   
-    console.log("Token address:", await token.getAddress());
+    // console.log("Token address:", await token.getAddress());
+    console.log("CrowdFunding address:", await crowdFunding.getAddress());
 }
   
 main()
